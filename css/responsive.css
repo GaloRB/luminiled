@@ -1,0 +1,719 @@
+/* smatphones */
+
+@media(max-width:320px) {
+    .container-barra__contact p {
+        font-size: 1rem;
+    }
+    /* frame menu mobile */
+    .frame-menu .li {
+        margin-top: 2rem;
+    }
+    /* mision - vision */
+    .mision-vision p, .valores li {
+        font-size: 1.2rem;
+    }
+
+    .servicios__servicios{
+        display: block;
+    }
+}
+
+@media(min-width:350px) and (max-width:360px) {
+    .frame-menu .li {
+        margin-top: 5rem;
+    }
+    .servicios__servicios{
+        display: block;
+    }
+}
+
+@media(max-width:480px) {
+    .mision-vision p, .valores li {
+        font-size: 1.6rem;
+    }
+    .banner-cotizacion{
+        font-size: 1.4rem;
+    }
+    button{
+        font-size: 1.4rem;
+        margin: 1rem auto;
+    }
+    .servicios__servicios{
+        display: block;
+    }
+
+    .footer .logo{
+        text-align: center;
+    }
+
+    .contacto{
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
+
+
+/* smatphones to tablets */
+
+@media(min-width:481px) and (max-width:767px) {
+    .nosotros__img__container img{
+        max-width: 40%;
+        text-align: center;
+
+    }
+    .banner-cotizacion{
+        font-size: 1.4rem;
+    }
+    button{
+        font-size: 1.4rem;
+        margin: 1rem auto;
+    }
+
+    .contacto{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .footer .logo{
+        text-align: center;
+    }
+}
+
+
+/* tablets */
+
+@media(min-width:768px) and (max-width:959px) {
+    /* ---- contact bar---*/
+    .container-barra__contact p {
+        font-size: 2.7rem;
+    }
+    /* menu ----*/
+    /* .logo img {
+        max-height: 6rem;
+    } */
+    .line-1,
+    .line-2,
+    .line-3 {
+        width: 5rem;
+        height: 0.5rem;
+        margin: 0.6rem 1em;
+        transition: 0.1s ease;
+    }
+    .changeline-1 {
+        transform: rotate(45deg) translate(2px, -2px);
+    }
+    .frame-menu a {
+        font-size: 7rem;
+    }
+    .frame-menu li {
+        padding: 8rem;
+        text-align: center;
+    }
+    /* banner*/
+    .banner__title h1 span {
+        font-size: 5rem;
+        color: white;
+    }
+    .banner__title h1 {
+        
+        border-radius: 8px;
+        text-align: center;
+        font-size: 6rem;
+        margin: auto 2rem;
+        margin-bottom: 25rem;
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+    /* nosotros*/
+    .nosotros{
+        flex-direction: row;
+    }
+    .nosotros__text,
+    .nosotros__img__container {
+    flex: 1;                 
+    max-width: 50%;
+    }
+    .nosotros__img__container img{
+        max-width: 80%;
+        text-align: center;
+    }
+    .nosotros__title h2 {
+        color: var(--base-color);
+        font-size: 5.5rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .nosotros__historia p {
+        font-size: 2.2rem;
+        margin: auto 3.6rem;
+    }
+    .nosotros__historia p span {
+        color: black;
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    
+    
+    /* mision-vision*/
+    .mision-vision h3 {
+        color: var(--cta-color);
+        margin-bottom: 0;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    .mision-vision p, .valores li {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        padding: 1.2rem 1rem;
+        text-align: justify;
+    }
+
+    .valores ul li{
+        margin: 1rem;
+    }
+    /* -------- servicios -----------*/
+
+    .servicios_container{
+        flex-direction: row;
+    }
+    .servicios h3 {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .serv_diseño > .servicios_container > .serv1 > .serv_list > ul{
+        min-height: 23.4rem;
+    }
+
+    .serv_inge{
+        background-image: url(../img/red_electrica.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: soft-light;
+        background-color: #413e3e54;
+        overflow-y: auto;
+    }
+    /* .servicios__list {
+        margin-right: 10rem;
+    }
+    .servicios__list ul {
+        list-style-type: disc;
+        margin: auto 5rem;
+    }
+    .servicios__list li {
+        padding: 1rem;
+        font-size: 2.7rem;
+    } */
+    .servicios__promo p {
+        text-align: center;
+        font-weight: 700;
+        margin: 2rem;
+        font-size: 3rem;
+    }
+
+    .proyectos__container{
+        margin: 7rem 5rem auto 5rem;
+    }
+    .distribuidores p {
+        text-align: center;
+        color: rgb(226, 226, 226);
+        padding: 2rem;
+        font-size: 3.2rem;
+    }
+    .toca {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* -------------- slide ----------*/
+    /* .slideshow {
+        width: 95%;
+        position: relative;
+    } */
+    /* ------------- CONTACTO ---------------*/
+    .footer .logo{
+        text-align: center;
+    }
+
+    .footer h3 {
+        font-size: 5rem;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+        padding-top: 1.5rem;
+    }
+    .footer p {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .footer h4 {
+        font-size: 4.5rem;
+        margin: 1rem;
+    }
+    .footer span {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* desktop */
+
+@media(min-width:960px) and (max-width:1199px) {
+    /* ---- contact bar -----*/
+    .container-barra__contact {
+        display: none;
+    }
+    /* ----- menu -----*/
+    .barra-menu {
+        display: none;
+    }
+    /* ----- menu -----*/
+    .barra-menu {
+        display: none;
+    }
+    .logo{
+        text-align: center;
+    }
+    /* .logo img {
+        max-height: 12rem;
+        object-fit: contain;
+    } */
+    .nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav h3 {
+        font-size: 3.5rem;
+        margin: 0;
+        padding: 2rem;
+        vertical-align: top;
+    }
+    .lista {
+        display: flex;
+        align-items: center;
+    }
+
+    .lista li{
+        text-align: center;
+    }
+    .lista .li-contact {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0.5rem 2rem;
+        border-radius: 1rem;
+        margin-left: 2rem;
+    }
+    .lista .li-contact a{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    .lista a {
+        padding: 0 2rem;
+        font-size: 2rem;
+        transition: all 0.3s ease;
+    }
+    .lista a:hover {
+        text-decoration: underline;
+    }
+    /* banner*/
+.banner{
+    background-attachment: fixed;
+}
+
+    .banner__title h1 span {
+        font-size: 3.5rem;
+        color: white    ;
+    }
+
+    .banner h1{
+        font-size: 5rem;
+    }
+
+    .banner__title h1 {
+        
+        border-radius: 8px;
+        text-align: center;
+        font-size: 5rem;
+        margin: auto 2rem;
+        margin-bottom: 25rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+    /* nosotros*/
+    .nosotros{
+        flex-direction: row;
+        background-attachment: fixed;
+    }
+    .nosotros__text{
+        flex-basis: 60%;
+    }
+    .nosotros__img__container {
+    flex-basis: 40%;
+    }
+    .nosotros__img__container img{
+        max-width: 60%;
+        text-align: center;
+    }
+    
+    .nosotros__title h2 {
+        color: var(--base-color);
+        font-size: 4.5rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .nosotros__historia p {
+        font-size: 2.0rem;
+        margin: auto 2rem;
+    }
+    
+    /* mision-vision*/
+    .mision-vision{
+        background-attachment: fixed;
+    }
+
+    .mision-vision h3 {
+        color: var(--cta-color);
+        margin-bottom: 0;
+        font-size: 2.6rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    .mision-vision p, .valores li {
+        font-size: 2.2rem;
+        text-align: justify;
+    }
+
+    .valores ul li{
+        margin: 1rem;
+    }
+    .boton {
+        background-color: var(--cta-color);
+        cursor: pointer;
+        margin: 2rem auto;
+        display: block;
+        border: none;
+        width: 30%;
+        border-radius: 2px;
+        box-shadow: 5px 7px 7px #999;
+        transition: all 0.5s ease;
+    }
+    
+    /* -------- servicios -----------*/
+    
+    .servicios_container{
+        flex-direction: row;
+    }
+
+    .servicios h3 {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .serv_inge{
+        background-image: url(../img/red_electrica.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: soft-light;
+        background-color: #413e3e54;
+        overflow-y: auto;
+    }
+
+    .servicios__text_header p{
+        font-size: 2rem;
+    }
+
+    .servicios__text p{
+        font-size: 2rem;
+    }
+    
+    .serv_diseño > .servicios_container > .serv1 > .serv_list > ul{
+        min-height: 19.4rem;
+    }
+
+    .proyectos{
+        background-attachment: fixed;
+    }
+
+    .proyectos__container{
+        margin: 7rem 6rem auto 6rem;
+    }
+
+    .proyectos__container h3 {
+        font-size: 4rem;
+    }
+
+    .distribuidores__text{
+        margin: auto 4rem;
+    }
+    .card {
+        /* margin: 2rem 16rem 2rem 10rem; */
+        overflow: hidden;
+    }
+    .card img {
+        width: 100%;
+        height: 35rem;
+        object-fit: cover;
+        transition: all 0.3s ease;
+    }
+    .servicios__promo p {
+        text-align: center;
+        font-weight: 700;
+        margin: 2rem;
+        font-size: 3rem;
+    }
+    .distribuidores p {
+        text-align: center;
+        color: rgb(226, 226, 226);
+        padding: 1rem;
+        font-size: 2.1rem;
+    }
+    .toca {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .slideshow {
+        width: 100%;
+        position: relative;
+    } */
+    /* ------------- CONTACTO ---------------*/
+    .footer h3 {
+        font-size: 5rem;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+        padding-top: 1.5rem;
+    }
+    .footer p {
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .footer h4 {
+        font-size: 4.5rem;
+        margin: 1rem;
+    }
+    .footer span {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* large display */
+
+@media(min-width:1200px) {
+    /* ---- contact bar -----*/
+    .container-barra__contact p {
+        display: none;
+    }
+    .container-barra__contact p {
+        font-size: 2.3rem;
+        margin: 1rem;
+    }
+    /* ----- menu -----*/
+    .barra-menu {
+        display: none;
+    }
+    /* ----- menu -----*/
+    .barra-menu {
+        display: none;
+    }
+    .logo{
+        text-align: center;
+    }
+    /* .logo img {
+        max-height: 8rem;
+        object-fit: contain;
+    } */
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .lista {
+        display: flex;
+        align-items: center;
+        
+    }
+    .lista .li-contact {
+       
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0.5rem 3rem;
+        border-radius: 1rem;
+        
+        transition: all 0.5s ease;
+    }
+    
+    .lista .li-contact a{
+        
+        font-size: 1.8rem;
+        padding: 1rem 0;
+    }
+    .lista a {
+        padding: 4rem 2rem;
+        font-size: 2.5rem;
+        transition: all 0.3s ease;
+    }
+    .lista a:hover {
+        text-decoration: underline;
+    }
+    /* banner*/
+    .banner {
+        background-attachment: fixed;
+    }
+    .banner h1{
+        font-size: 5rem;
+    }
+    
+    /* nosotros*/
+    .nosotros{
+        flex-direction: row;
+        background-attachment: fixed;
+    }
+    .nosotros__text{
+        flex-basis: 60%;
+    }
+    .nosotros__img__container {
+    flex-basis: 40%;                
+    }
+    .nosotros__img__container img{
+        max-width: 60%;
+        text-align: center;
+    }
+
+    .nosotros__historia p{
+        font-size: 2.2rem;
+    }
+
+    /* mision-vision*/
+    .mision-vision{
+        background-attachment: fixed;
+    }
+    .mision-vision__text {
+        padding: 1rem;
+        margin: 2rem 10rem;
+    }
+    .mision-vision h3 {
+        color: var(--cta-color);
+        margin-bottom: 0;
+        font-size: 2.8rem;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .mision-vision p, .valores li {
+        font-size: 2.2rem;
+        text-align: justify;
+    }
+
+    .valores ul li{
+        margin: 1rem 4rem;
+    }
+    /* -------- servicios -----------*/
+
+    .servicios_container{
+        flex-direction: row;
+    }
+
+    .servicios__text_header p{
+        font-size: 2rem;
+    }
+
+    .servicios__text{
+        margin: auto 10rem;
+    }
+    .servicios h3 {
+        font-size: 3.2rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .servicios__text p{
+        font-size: 2rem;
+    }
+
+    .serv_diseño > .servicios_container > .serv1 > .serv_list > ul{
+        min-height: 14rem;
+    }
+
+    .serv_inge{
+        background-image: url(../img/red_electrica.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: soft-light;
+        background-color: #413e3e54;
+        overflow-y: auto;
+    }
+
+    .proyectos{
+        background-attachment: fixed;
+    }
+
+    .proyectos__container{
+        margin: 7rem 6rem auto 6rem;
+    }
+
+    .proyectos__container h3 {
+        font-size: 4rem;
+    }
+  
+    .boton {
+        width: 30%;
+    }
+
+    .card p{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .card img {
+        width: 100%;
+        height: 35rem;
+        object-fit: cover;
+        transition: all 0.3s ease;
+    }
+   
+    .servicios__promo p {
+        text-align: center;
+        font-weight: 700;
+        margin: 4rem 10rem;
+        font-size: 3rem;
+    }
+
+    .distribuidores__text{
+        margin: auto 10rem;
+    }
+
+    .distribuidores h3 {
+        text-align: center;
+        color: rgb(226, 226, 226);
+        padding: 2rem;
+        font-size: 4.5rem;
+    }
+
+    .distribuidores__text p{
+        font-size: 2rem;
+    }
+
+    
+    .toca {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .slider li img {
+        width: 50%;
+        height: 30rem;
+        margin-left: 37rem;
+    } */
+}
