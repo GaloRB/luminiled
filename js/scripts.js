@@ -9,6 +9,9 @@ let navMobile = document.querySelector('.nav-mobile');
 let hidde = document.querySelector('#hidden');
 let logo = document.querySelector('#logo');
 let li = document.querySelector('.li');
+let banner = document.querySelector('.banner');
+let nosotros = document.querySelector('.nosotros');
+let currentIndex = 0;
 
 barras.addEventListener('click', () => {
     line1.classList.toggle('changeline-1');
@@ -44,7 +47,7 @@ function mostrarScroll() {
     }
 }
 
-function mostrarScroll3() {
+/* function mostrarScroll3() {
     let scrollTop = document.documentElement.scrollTop;
     for (var i = 0; i < animacionServUp.length; i++) {
         let alturaanimacion = animacionServUp[i].offsetTop;
@@ -54,7 +57,7 @@ function mostrarScroll3() {
         }
     }
 }
-
+ */
 let animacionAbajo = document.querySelectorAll(".animacion-abajo");
 
 function mostrarScroll1() {
@@ -68,7 +71,7 @@ function mostrarScroll1() {
     }
 }
 
-function mostrarScroll4() {
+/* function mostrarScroll4() {
     let scrollTop = document.documentElement.scrollTop;
     for (var i = 0; i < animacionServDown.length; i++) {
         let alturaanimacion = animacionServDown[i].offsetTop;
@@ -77,7 +80,7 @@ function mostrarScroll4() {
             animacionServDown[i].classList.add("mostrar-abajo");
         }
     }
-}
+} */
 
 let animacionDerecha = document.querySelectorAll(".animacion-derecha");
 
@@ -137,6 +140,19 @@ burguer.addEventListener('click', ()=>{
 })
 }
 
+function changeBackground(){
+    const images = ['../img/hero1.jpg','../img/hero2.jpg','../img/hero3.jpg','../img/hero4.jpg','../img/hero5.jpg'];
+
+   
+        banner.style.backgroundImage = `url(${images[currentIndex]})`;
+        nosotros.style.backgroundImage = `url(${images[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % images.length;
+
+    setTimeout(() => {
+        changeBackground();
+    }, 3000);
+}
+
     /* // Seleccionar el elemento con fondo
     const backgroundElement = document.querySelector('.serv_inge');
 
@@ -193,10 +209,11 @@ burguer.addEventListener('click', ()=>{
 
 document.addEventListener("DOMContentLoaded", screenHeight);
 document.addEventListener("DOMContentLoaded", banner_path);
+document.addEventListener("DOMContentLoaded", changeBackground);
 
 window.addEventListener('scroll', mostrarScroll);
 window.addEventListener('scroll', mostrarScroll1);
 window.addEventListener('scroll', mostrarScroll2);
-window.addEventListener('scroll', mostrarScroll3);
-window.addEventListener('scroll', mostrarScroll4);
+/* window.addEventListener('scroll', mostrarScroll3);
+window.addEventListener('scroll', mostrarScroll4); */
 window.addEventListener('scroll', mostrarScroll5);

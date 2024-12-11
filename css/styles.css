@@ -487,6 +487,7 @@
         background-position: center;
         background-blend-mode: soft-light;
         background-color: #3c3b3b95;
+        transition: background 1s ease-in-out;
         /* height: 76.5vh; */
     }
 
@@ -553,6 +554,7 @@
         flex-direction: column;
         gap: 2rem;
         padding: 2rem;
+        transition: background 1s ease-in-out;
         
     }
 
@@ -689,12 +691,48 @@
         border-radius: 15px;
     }
     /* -------- servicios -----------*/
+    .servicios{
+        text-align: center;
+        margin: 1.5rem;
+        padding: 2rem;
+        background: linear-gradient(227deg, rgb(183, 183, 187) 6%, rgb(242, 241, 237) 16%, rgba(237, 233, 233, 0.986) 94%);
+        border-radius: 3rem;
+    }
     
     .servicios h3 {
         color: var(--text-color);
         font-size: 3.5rem;
         text-align: center;
         margin: 0;
+    }
+
+    .servicios h4{
+        color: var(--text-color);
+        font-size: 2rem;
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+    .servicios p{
+        color: var(--text-color);
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    .servicios > p::after {
+        content: ""; /* Necesario para que el pseudoelemento se muestre */
+        position: absolute;
+        left: 0;
+        bottom: 0; /* Se alinea al fondo del elemento */
+        left: 50%;
+        width: 50%; /* El ancho del borde coincide con el texto */
+        height: 0.2rem; /* Espesor del borde */
+        background-color: var(--cta-color); /* Color del borde */
+        transform: translateX(-50%);
     }
 
     .serv_diseño{
@@ -782,7 +820,10 @@
     }
 
     .serv_img{
+        display: block;
         text-align: center;
+        max-width: 1300px;
+        margin: auto 1rem;
     }
 
     .serv_img img{
@@ -797,10 +838,51 @@
         font-size: 1.6rem;
     }
 
+    .block_cta{
+        background-color: #676767;
+        padding: 2rem;
+    }
+
+    .block_cta h3{
+        color: #fff;
+    }
+
     .proyectos__title > .servicios__text p{
         font-size: 2rem;
         color: #000;
         text-align: center;
+    }
+
+    .container__gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .trabajos-img { 
+        overflow: hidden;
+        width: 30rem;
+        margin: 0.5rem;
+    }
+
+    .trabajos-img > button{
+        width: 50%;
+        margin-top: auto;
+    }
+
+    
+    .trabajos-img img {
+        width: 80%;
+        display: inline-block;
+        transition: all 0.5s ease;
+        height: 20rem;
+        object-fit: cover;
+        object-position:top ;
+    }
+
+    
+    .trabajos-img img:hover {
+        transform: scale(1.2);
     }
 
     .container__cards{
@@ -929,12 +1011,14 @@
 
     /* --------- PROYECTOS ----------------- */
     .proyectos{
-        background-image: url(../img/fondo_obras.png);
+       /*  background-image: url(../img/trabajos_fondo.jpg);
         background-size: cover;
         background-position: center;
         background-blend-mode: soft-light;
-        background-color: #ffffff8c;
-        padding: 2rem;
+        background-color: #eee6e6bd;
+        padding: 2rem; */
+        text-align: center;
+        padding: 3rem;
     }
     .proyectos__title{
         margin-top: 4rem;
@@ -956,13 +1040,6 @@
     }
     .proyectos h3 {
         color: var(--text-color);
-        font-size: 4rem;
-        text-align: center;
-        margin: 0;
-    }
-
-    .proyectos__container h3 {
-        color: var(--text-color);
         font-size: 3rem;
         text-align: center;
         margin: 0;
@@ -973,6 +1050,7 @@
         letter-spacing: 10px;
         text-transform: uppercase;
     }
+
 
     .proyectos h4{
         color: black;

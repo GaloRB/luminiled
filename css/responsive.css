@@ -173,6 +173,10 @@
     }
     /* -------- servicios -----------*/
 
+    .text-card{
+        height: 150px;
+    }
+
     .servicios_container{
         flex-direction: row;
     }
@@ -405,6 +409,10 @@
     }
     
     /* -------- servicios -----------*/
+
+    .text-card{
+        height: 150px;
+    }
     
     .servicios_container{
         flex-direction: row;
@@ -620,8 +628,16 @@
     }
     /* -------- servicios -----------*/
 
+    .text-card{
+        height: 150px;
+    }
+
     .servicios_container{
         flex-direction: row;
+    }
+
+    .servicios__list{
+        margin: 0 8rem;
     }
 
     .servicios__text_header p{
