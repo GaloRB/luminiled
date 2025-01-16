@@ -1062,12 +1062,12 @@
     /* ------------- CONTACTO ---------------*/
     
     .footer {
-        background-color: var(--base-color);
+        background-color: #2f2e2e;
         padding: auto 2rem;
     }
     
     .footer h3 {
-        color: #000;
+        color: #fff;
         font-size: 3rem;
         text-align: center;
         margin-bottom: 0;
@@ -1077,7 +1077,7 @@
     
     .footer p{
         text-align: center;
-        color: #000;
+        color: #fff;
         padding: 0.5rem;
         font-size: 1.4rem;
         margin-bottom: 0;
@@ -1085,7 +1085,7 @@
     }
     
     .footer a {
-        color: #000;
+        color: #fff;
     }
 
     .contacto{
@@ -1096,14 +1096,14 @@
     }
 
     .contacto h5{
-        color: #000;
+        color: #fff;
         font-size: 2rem;
         text-align: center;
         margin: 0.2rem;
     }
 
     .contacto h6{
-        color: #000;
+        color: #fff;
         font-size: 1.8rem;
         text-align: center;
         margin: 1rem auto 0.2rem;
@@ -1125,19 +1125,19 @@
     }
     
     .footer h4 {
-        color: #000;
+        color: #fff;
         font-size: 3.5rem;
         text-align: center;
         margin: 1rem;
     }
     .footer h4 span{
-        color: #000;
+        color: #fff;
         font-size: 2.5rem;
         text-align: center;
     }
     .footer span {
         display: block;
-        color: #000;
+        color: #fff;
         text-align: center;
         padding-bottom: 2rem;
     }

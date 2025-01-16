@@ -141,7 +141,7 @@ burguer.addEventListener('click', ()=>{
 }
 
 function changeBackground(){
-    const images = ['../luminiled/img/hero1.jpg','../luminiled/img/hero2.jpg','../luminiled/img/hero3.jpg','../luminiled/img/hero4.jpg','../luminiled/img/hero5.jpg'];
+    const images = ['../img/hero1.jpg','../img/hero2.jpg','../img/hero3.jpg','../img/hero4.jpg','../img/hero5.jpg'];
 
    
         banner.style.backgroundImage = `url(${images[currentIndex]})`;
